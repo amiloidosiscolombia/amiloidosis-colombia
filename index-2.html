@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="es" data-l="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Guía y comunidad para pacientes con amiloidosis y sus familias en Colombia: tipos, señales, derechos, ruta de atención y organizaciones de apoyo.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Amiloidosis Colombia | Guía para pacientes y familias</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://amiloidosiscolombia.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Amiloidosis Colombia">
+<meta property="og:locale" content="es_CO">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://amiloidosiscolombia.com/">
+<meta property="og:title" content="Amiloidosis Colombia | Guía para pacientes y familias">
+<meta property="og:description" content="Qué es la amiloidosis, sus derechos como paciente de enfermedad huérfana, cómo exigir atención a su EPS y organizaciones de apoyo en Colombia.">
+<meta property="og:image" content="https://amiloidosiscolombia.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Amiloidosis Colombia: derechos, ruta de atención y apoyo para pacientes y familias">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F8F6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: single reading column with a wide "route" band; accents borrowed from the Congo red stain (red) and its apple-green birefringence */
+:root{
+  --bg:#F7F8F6; --surface:#FFFFFF; --ink:#1B2430; --muted:#55606C; --line:#DCE1DA;
+  --congo:#B23A48; --congo-soft:#F6E3E5; --apple:#4F7F2A; --apple-soft:#E6F0DC;
+  --display:"Newsreader", Georgia, "Times New Roman", serif;
+  --body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12171D; --surface:#1A2129; --ink:#E7ECEF; --muted:#9CA8B3; --line:#2C3640;
+  --congo:#EE7F8C; --congo-soft:#3A2228; --apple:#A6D47B; --apple-soft:#22301A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12171D; --surface:#1A2129; --ink:#E7ECEF; --muted:#9CA8B3; --line:#2C3640;
+  --congo:#EE7F8C; --congo-soft:#3A2228; --apple:#A6D47B; --apple-soft:#22301A; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.prose{max-width:66ch}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,3.6vw,2.2rem)}
+h3{font-size:1.25rem;font-family:var(--body);font-weight:700}
+p{margin:0}
+a{color:var(--congo);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--apple);outline-offset:2px;border-radius:4px}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--congo)}
+
+/* language */
+:root:not([data-l="en"]) .en{display:none!important}
+:root[data-l="en"] .es{display:none!important}
+
+header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:10;background:var(--bg)}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{font-family:var(--display);font-weight:600;font-size:1.15rem;display:flex;align-items:center;gap:10px}
+.fibril{width:28px;height:28px;flex:none}
+nav.sec{display:flex;gap:18px;font-size:.92rem}
+nav.sec a{color:var(--muted);text-decoration:none}
+nav.sec a:hover{color:var(--ink)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.lang button{font:600 .85rem var(--body);padding:6px 12px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+@media (max-width:760px){nav.sec{display:none}}
+
+section{padding-block:56px;border-bottom:1px solid var(--line)}
+.stack{display:flex;flex-direction:column;gap:18px}
+
+.hero{padding-block:56px 48px}
+.hero .lede{font-size:1.2rem;color:var(--muted)}
+.notice{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--congo);border-radius:6px;padding:14px 16px;font-size:.95rem}
+.hero-links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;padding:10px 16px;border-radius:6px;text-decoration:none;border:1px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--congo);border-color:var(--congo);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#1B0E10}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#1B0E10}}
+
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.type{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.type .code{font:700 .8rem var(--body);letter-spacing:.08em;color:var(--apple)}
+.type p{font-size:.95rem;color:var(--muted)}
+
+.signs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 28px;list-style:none;padding:0;margin:0}
+.signs li{display:flex;gap:10px;align-items:baseline;padding-block:8px;border-bottom:1px dashed var(--line)}
+.signs li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--congo);flex:none;transform:translateY(-1px)}
+.callout{background:var(--apple-soft);border-radius:8px;padding:18px 20px}
+
+.route{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;counter-reset:step;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.step{padding:20px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:8px;min-width:0}
+.step:last-child{border-right:0}
+.step .n{font-family:var(--display);font-size:2rem;color:var(--congo);line-height:1}
+.step p{font-size:.95rem;color:var(--muted)}
+@media (max-width:900px){.step{border-right:0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}}
+
+.rights{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.rights div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.rights h3{font-size:1.05rem}
+.rights p{font-size:.95rem;color:var(--muted)}
+
+.orgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.org{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.org p{font-size:.95rem;color:var(--muted)}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.95rem}
+.contact code{font:600 .95rem var(--body);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:2px 8px;user-select:all;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.copy{font:600 .78rem var(--body);border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:4px;padding:3px 8px;cursor:pointer}
+
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+
+.community{background:var(--congo-soft)}
+.ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.way{background:var(--surface);border-radius:8px;padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.way p{font-size:.95rem;color:var(--muted)}
+.msg-to{font-size:.9rem;font-weight:600;color:var(--ink)}
+.msgbox{display:flex;flex-direction:column;gap:8px}
+.msg-subj{font-size:.88rem;color:var(--ink)}
+.msg-body{margin:0;font:400 .85rem/1.5 var(--body);white-space:pre-wrap;overflow-wrap:anywhere;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px 12px;color:var(--ink)}
+.msg-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:.88rem;font-weight:600}
+.tbd{display:inline-block;font-size:.8rem;font-weight:600;color:var(--congo);border:1px dashed var(--congo);border-radius:4px;padding:2px 8px;align-self:flex-start}
+
+footer{padding-block:36px;font-size:.88rem;color:var(--muted)}
+footer .stack{gap:10px}
+@media (prefers-reduced-motion:no-preference){.btn,.copy{transition:background .15s,color .15s}}
+/* feedback widget */
+.fb-btn{position:fixed;right:calc(16px + env(safe-area-inset-right, 0px));bottom:calc(16px + env(safe-area-inset-bottom, 0px));z-index:20;display:inline-flex;align-items:center;gap:8px;font:600 .92rem var(--body);padding:11px 16px;border-radius:999px;border:0;background:var(--ink);color:var(--bg);cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.fb-panel{box-sizing:border-box;position:fixed;right:calc(16px + env(safe-area-inset-right, 0px));bottom:calc(72px + env(safe-area-inset-bottom, 0px));z-index:21;width:min(360px, calc(100vw - 32px));max-height:calc(100vh - 110px);overflow:auto;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.2);padding:18px}
+.fb-panel form{display:flex;flex-direction:column;gap:14px}
+.fb-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.fb-head h2{font-size:1.2rem}
+.fb-close{border:0;background:transparent;color:var(--muted);font-size:1.4rem;line-height:1;cursor:pointer;padding:4px 8px}
+.fb-panel fieldset{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.fb-panel legend{font-weight:600;font-size:.95rem;margin-bottom:6px}
+.fb-choices{display:flex;gap:8px;flex-wrap:wrap}
+.fb-choices label{flex:1;min-width:80px;text-align:center;border:1px solid var(--line);border-radius:6px;padding:8px;cursor:pointer;font-size:.92rem}
+.fb-choices input{position:absolute;opacity:0;pointer-events:none}
+.fb-choices input:checked + span{color:var(--congo);font-weight:700}
+.fb-choices label:has(input:checked){border-color:var(--congo);background:var(--congo-soft)}
+.fb-choices label:has(input:focus-visible){outline:3px solid var(--apple);outline-offset:2px}
+.fb-panel label.field{display:flex;flex-direction:column;gap:6px;font-size:.92rem;font-weight:600}
+.fb-panel textarea,.fb-panel input[type="email"]{font:400 .95rem var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:9px 10px;width:100%;box-sizing:border-box}
+.fb-panel textarea{min-height:90px;resize:vertical}
+.fb-note{font-size:.82rem;color:var(--muted)}
+.fb-send{font:600 .95rem var(--body);padding:10px 16px;border-radius:6px;border:0;background:var(--congo);color:#fff;cursor:pointer}
+.fb-send[disabled]{opacity:.6;cursor:default}
+.fb-msg{font-size:.92rem}
+.fb-msg.err{color:var(--congo)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media print{.fb-btn,.fb-panel{display:none}}
+
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap topbar">
+    <div class="brand">
+      <svg class="fibril" viewBox="0 0 28 28" aria-hidden="true"><g fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M3 20c4-8 8-8 11-4s7 4 11-4" stroke="var(--congo)"/><path d="M3 12c4 8 8 8 11 4s7-4 11 4" stroke="var(--apple)"/></g></svg>
+      <span class="es">Amiloidosis Colombia</span><span class="en">Amyloidosis Colombia</span>
+    </div>
+    <nav class="sec">
+      <a href="#que-es"><span class="es">Qué es</span><span class="en">What it is</span></a>
+      <a href="#ruta"><span class="es">Ruta de atención</span><span class="en">Getting care</span></a>
+      <a href="#apoyo"><span class="es">Organizaciones</span><span class="en">Organizations</span></a>
+      <a href="#comunidad"><span class="es">Comunidad</span><span class="en">Community</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button id="btn-es" type="button" data-set="es" aria-pressed="true">ES</button>
+      <button id="btn-en" type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap stack">
+    <span class="eyebrow"><span class="es">Guía y comunidad para pacientes y familias</span><span class="en">Guide and community for patients and families</span></span>
+    <h1><span class="es">Nadie tiene que recorrer este camino en soledad.</span><span class="en">You don't have to walk this path alone.</span></h1>
+    <p class="lede prose">
+      <span class="es">Información clara sobre la amiloidosis, sus derechos como paciente de una enfermedad huérfana en Colombia, cómo exigir atención a su EPS y dónde encontrar a otras personas que viven lo mismo.</span>
+      <span class="en">Clear information about amyloidosis, your rights as a person with an orphan disease in Colombia, how to secure care from your EPS (health insurer), and where to find others going through the same thing.</span>
+    </p>
+    <div class="hero-links">
+      <a class="btn primary" href="#ruta"><span class="es">Cómo obtener atención</span><span class="en">How to get care</span></a>
+      <a class="btn" href="#comunidad"><span class="es">Unirse a la comunidad</span><span class="en">Join the community</span></a>
+    </div>
+    <div class="notice prose">
+      <p><span class="es">Esta página es informativa e independiente. No reemplaza la valoración de su equipo médico tratante. Si tiene dificultad para respirar, dolor en el pecho o desmayos, acuda a urgencias o llame al 123.</span>
+      <span class="en">This page is independent and for information only. It does not replace your treating physician. If you have trouble breathing, chest pain or fainting, go to the emergency room or call 123.</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="que-es">
+  <div class="wrap stack">
+    <span class="eyebrow"><span class="es">La enfermedad</span><span class="en">The disease</span></span>
+    <h2><span class="es">¿Qué es la amiloidosis?</span><span class="en">What is amyloidosis?</span></h2>
+    <p class="prose">
+      <span class="es">Es un grupo de enfermedades en las que una proteína se pliega mal, forma fibras llamadas amiloide y se acumula en órganos como el corazón, los nervios, los riñones o el sistema digestivo. Con el tiempo esas fibras afectan cómo funcionan. Existen varios tipos y cada uno se trata de forma distinta, por eso saber cuál tiene es el primer paso.</span>
+      <span class="en">It is a group of diseases in which a protein misfolds, forms fibers called amyloid, and builds up in organs such as the heart, nerves, kidneys or digestive tract. Over time those deposits affect how the organs work. There are several types and each is treated differently, so knowing which one you have is the first step.</span>
+    </p>
+    <div class="types">
+      <div class="type"><span class="code">AL</span><h3><span class="es">Cadenas ligeras</span><span class="en">Light chain</span></h3><p><span class="es">Causada por células de la médula ósea que producen una proteína anormal. Se maneja con hematología.</span><span class="en">Caused by bone marrow cells producing an abnormal protein. Managed by hematology.</span></p></div>
+      <div class="type"><span class="code">ATTRv</span><h3><span class="es">Transtiretina hereditaria</span><span class="en">Hereditary transthyretin</span></h3><p><span class="es">Por un cambio genético. Suele afectar nervios y corazón, con síntomas desde la edad adulta.</span><span class="en">Due to a genetic variant. Often affects nerves and heart, with symptoms starting in adulthood.</span></p></div>
+      <div class="type"><span class="code">ATTRwt</span><h3><span class="es">Transtiretina tipo salvaje</span><span class="en">Wild-type transthyretin</span></h3><p><span class="es">No es hereditaria. Aparece con la edad, sobre todo en hombres mayores, y afecta principalmente el corazón.</span><span class="en">Not inherited. Appears with age, mostly in older men, and mainly affects the heart.</span></p></div>
+      <div class="type"><span class="code">AA</span><h3><span class="es">Secundaria</span><span class="en">Secondary</span></h3><p><span class="es">Asociada a inflamación crónica, por ejemplo artritis reumatoide o infecciones de larga duración.</span><span class="en">Linked to chronic inflammation, for example rheumatoid arthritis or long-term infections.</span></p></div>
+    </div>
+
+    <h3 style="margin-top:18px"><span class="es">Señales que vale la pena consultar</span><span class="en">Signs worth bringing to a doctor</span></h3>
+    <p class="prose" style="color:var(--muted)"><span class="es">Los síntomas se confunden fácilmente con diabetes o enfermedad del corazón, y el diagnóstico suele llegar tarde. Consulte con su equipo médico si varios de estos aparecen juntos:</span><span class="en">Symptoms are easily mistaken for diabetes or heart disease, and diagnosis often comes late. Talk to your doctor if several of these appear together:</span></p>
+    <ul class="signs">
+      <li><span class="es">Hormigueo, ardor o pérdida de sensibilidad en pies y manos</span><span class="en">Tingling, burning or numbness in feet and hands</span></li>
+      <li><span class="es">Síndrome del túnel carpiano en ambas manos</span><span class="en">Carpal tunnel syndrome in both hands</span></li>
+      <li><span class="es">Falta de aire, hinchazón de piernas, cansancio extremo</span><span class="en">Shortness of breath, swollen legs, extreme fatigue</span></li>
+      <li><span class="es">Mareo al ponerse de pie o presión baja</span><span class="en">Dizziness on standing or low blood pressure</span></li>
+      <li><span class="es">Diarrea o estreñimiento alternos, pérdida de peso sin explicación</span><span class="en">Alternating diarrhea or constipation, unexplained weight loss</span></li>
+      <li><span class="es">Orina espumosa o problemas renales</span><span class="en">Foamy urine or kidney problems</span></li>
+      <li><span class="es">Lengua agrandada o moretones alrededor de los ojos</span><span class="en">Enlarged tongue or bruising around the eyes</span></li>
+      <li><span class="es">Familiares con síntomas parecidos o muerte cardíaca temprana</span><span class="en">Relatives with similar symptoms or early cardiac death</span></li>
+    </ul>
+    <div class="callout prose">
+      <p><strong><span class="es">Si es hereditaria:</span><span class="en">If it is hereditary:</span></strong>
+      <span class="es">cada hijo o hija de una persona con ATTRv tiene un 50% de probabilidad de heredar la variante. Pida a su EPS asesoría genética antes de que sus familiares se hagan la prueba, para entender qué significa un resultado positivo.</span>
+      <span class="en">each child of a person with ATTRv has a 50% chance of inheriting the variant. Ask your EPS for genetic counseling before relatives get tested, so they understand what a positive result means.</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="derechos">
+  <div class="wrap stack">
+    <span class="eyebrow"><span class="es">Marco legal</span><span class="en">Legal framework</span></span>
+    <h2><span class="es">Sus derechos como paciente de enfermedad huérfana</span><span class="en">Your rights as an orphan disease patient</span></h2>
+    <div class="rights">
+      <div><h3>Ley 1392 de 2010</h3><p><span class="es">Reconoce las enfermedades huérfanas como de especial interés y busca garantizar acceso a diagnóstico, tratamiento y rehabilitación. En Colombia una enfermedad es huérfana si afecta a menos de 1 de cada 5.000 personas y es crónica y debilitante.</span><span class="en">Recognizes orphan diseases as a matter of special interest and aims to guarantee access to diagnosis, treatment and rehabilitation. In Colombia a disease is orphan if it affects fewer than 1 in 5,000 people and is chronic and debilitating.</span></p></div>
+      <div><h3><span class="es">Listado oficial</span><span class="en">Official list</span></h3><p><span class="es">El listado vigente del Ministerio de Salud (Resolución 2625 del 17 de diciembre de 2025, 2.273 enfermedades) incluye la amiloidosis de cadenas ligeras (AL), la amiloidosis por transtiretina tipo salvaje (ATTRwt), la cardiomiopatía amiloidótica familiar por transtiretina y la amiloidosis secundaria. La misma resolución establece que el listado no puede ser una barrera de acceso y que prima el criterio médico.</span><span class="en">The current Ministry of Health list (Resolution 2625 of December 17, 2025, 2,273 diseases) includes light chain amyloidosis (AL), wild-type transthyretin amyloidosis (ATTRwt), familial transthyretin amyloid cardiomyopathy, and secondary amyloidosis. The same resolution states that the list cannot be a barrier to care and that medical judgment prevails.</span></p></div>
+      <div><h3><span class="es">Sin copagos ni cuotas moderadoras</span><span class="en">No copays or moderating fees</span></h3><p><span class="es">La Corte Constitucional ha reiterado que las personas con enfermedades catastróficas o de alto costo están exentas de copagos y cuotas moderadoras durante su tratamiento, y que la EPS no puede negar servicios porque no estén en el plan de beneficios.</span><span class="en">The Constitutional Court has repeatedly held that patients with catastrophic or high-cost diseases are exempt from copays and moderating fees during treatment, and that the EPS cannot deny services because they are outside the benefits plan.</span></p></div>
+      <div><h3><span class="es">Atención integral y continua</span><span class="en">Comprehensive, continuous care</span></h3><p><span class="es">Usted puede pedir tratamiento integral (todo lo relacionado con su diagnóstico), una segunda opinión justificada y que no se interrumpan sus medicamentos por trámites administrativos.</span><span class="en">You can request comprehensive treatment (everything related to your diagnosis), a justified second opinion, and that your medications are not interrupted for administrative reasons.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ruta">
+  <div class="wrap stack">
+    <span class="eyebrow"><span class="es">Paso a paso</span><span class="en">Step by step</span></span>
+    <h2><span class="es">Ruta para exigir atención</span><span class="en">How to secure care</span></h2>
+    <p class="prose" style="color:var(--muted)"><span class="es">Guarde copia de todo: órdenes médicas, fórmulas, historia clínica, radicados y respuestas. Ese archivo es su mejor herramienta.</span><span class="en">Keep a copy of everything: medical orders, prescriptions, clinical records, filing numbers and replies. That file is your best tool.</span></p>
+    <div class="route">
+      <div class="step"><span class="n">1</span><h3><span class="es">Orden médica</span><span class="en">Order from your physician</span></h3><p><span class="es">Pida por escrito el diagnóstico, los exámenes (biopsia, gammagrafía, prueba genética) y la remisión a especialistas. Si es un medicamento fuera del plan, se formula por MIPRES.</span><span class="en">Ask in writing for the diagnosis, tests (biopsy, scintigraphy, genetic test) and specialist referrals. For drugs outside the benefits plan, the doctor prescribes through MIPRES.</span></p></div>
+      <div class="step"><span class="n">2</span><h3><span class="es">Solicitud a la EPS</span><span class="en">Request to the EPS</span></h3><p><span class="es">Radique la orden en la EPS. Si se demora o la niega, presente un derecho de petición y conserve el número de radicado.</span><span class="en">File the order with your EPS. If it is delayed or denied, submit a formal petition (derecho de petición) and keep the filing number.</span></p></div>
+      <div class="step"><span class="n">3</span><h3><span class="es">Queja ante Supersalud</span><span class="en">Complaint to Supersalud</span></h3><p><span class="es">Si la EPS no responde, radique una PQRD ante la Superintendencia Nacional de Salud.</span><span class="en">If the EPS does not respond, file a complaint (PQRD) with the National Health Superintendency.</span></p>
+        <div class="contact"><code>018000 513 700</code><button class="copy" type="button" data-copy="018000513700"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+        <p><a href="https://superargo.supersalud.gov.co/2/formularioWeb/pqrd.php" target="_blank" rel="noopener"><span class="es">Formulario en línea</span><span class="en">Online form</span></a></p></div>
+      <div class="step"><span class="n">4</span><h3><span class="es">Acción de tutela</span><span class="en">Tutela action</span></h3><p><span class="es">Si su salud o su vida están en riesgo, puede interponer una tutela ante cualquier juez, sin abogado. Pida tratamiento integral. Las organizaciones de pacientes de abajo pueden orientarle.</span><span class="en">If your health or life is at risk, you can file a tutela before any judge, without a lawyer. Ask for comprehensive treatment. The patient organizations below can guide you.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="apoyo">
+  <div class="wrap stack">
+    <span class="eyebrow"><span class="es">Quién puede ayudar</span><span class="en">Who can help</span></span>
+    <h2><span class="es">Organizaciones de apoyo</span><span class="en">Support organizations</span></h2>
+    <div class="orgs">
+      <div class="org">
+        <h3>FUNCOLEHF</h3>
+        <p><span class="es">Fundación Colombiana para Enfermedades Huérfanas. Orienta a pacientes con sospecha o diagnóstico de amiloidosis hereditaria, acompaña a familias y hace incidencia ante entes de control.</span><span class="en">Colombian Foundation for Orphan Diseases. Guides patients with suspected or confirmed hereditary amyloidosis, supports families and advocates before oversight bodies.</span></p>
+        <div class="contact"><code>304 336 7417</code><button class="copy" type="button" data-copy="3043367417"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+        <div class="contact"><code>contactenos@enfermedadeshuerfanas.org.co</code><button class="copy" type="button" data-copy="contactenos@enfermedadeshuerfanas.org.co"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+        <p><a href="https://www.enfermedadeshuerfanas.org.co" target="_blank" rel="noopener">enfermedadeshuerfanas.org.co</a></p>
+      </div>
+      <div class="org">
+        <h3>FECOER</h3>
+        <p><span class="es">Federación Colombiana de Enfermedades Raras. Agrupa más de 50 asociaciones de pacientes, defiende derechos y remite a cada paciente a la organización que corresponde a su enfermedad.</span><span class="en">Colombian Federation of Rare Diseases. Brings together more than 50 patient associations, defends patient rights and refers each patient to the organization for their condition.</span></p>
+        <div class="contact"><code>320 944 5674</code><button class="copy" type="button" data-copy="3209445674"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+        <div class="contact"><code>info@fecoer.org</code><button class="copy" type="button" data-copy="info@fecoer.org"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+        <p><a href="https://www.fecoer.org" target="_blank" rel="noopener">fecoer.org</a></p>
+      </div>
+      <div class="org">
+        <h3><span class="es">Observatorio ENHU</span><span class="en">ENHU Observatory</span></h3>
+        <p><span class="es">Observatorio Interinstitucional de Enfermedades Huérfanas, que reúne 37 organizaciones de pacientes y documenta barreras de acceso.</span><span class="en">Inter-institutional Orphan Disease Observatory, bringing together 37 patient organizations and documenting access barriers.</span></p>
+      </div>
+      <div class="org">
+        <h3>Amyloidosis Foundation</h3>
+        <p><span class="es">Fundación internacional con guías para pacientes en español, incluida una guía sobre amiloidosis por transtiretina.</span><span class="en">International foundation with patient guides in Spanish, including a guide on transthyretin amyloidosis.</span></p>
+        <p><a href="https://amyloidosis.org/wp-content/uploads/2025/09/ATTR-Guide-2024_ES-ES.pdf" target="_blank" rel="noopener"><span class="es">Guía ATTR en español (PDF)</span><span class="en">ATTR guide in Spanish (PDF)</span></a></p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:22px"><span class="es">Centros con experiencia publicada en amiloidosis</span><span class="en">Centers with published amyloidosis experience</span></h3>
+    <p class="prose" style="color:var(--muted)"><span class="es">Estas instituciones han publicado series de pacientes colombianos. No es una recomendación ni un listado completo; su EPS define la red a la que puede acceder.</span><span class="en">These institutions have published case series of Colombian patients. This is neither an endorsement nor a complete list; your EPS defines which network you can use.</span></p>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th><span class="es">Ciudad</span><span class="en">City</span></th><th><span class="es">Institución</span><span class="en">Institution</span></th><th><span class="es">Experiencia</span><span class="en">Experience</span></th></tr></thead>
+        <tbody>
+          <tr><td>Bogotá</td><td>LaCardio, Fundación Cardioinfantil</td><td><span class="es">Amiloidosis cardíaca AL y ATTR</span><span class="en">Cardiac AL and ATTR amyloidosis</span></td></tr>
+          <tr><td>Bogotá</td><td>Hospital Universitario Fundación Santa Fe de Bogotá</td><td><span class="es">Cardiología; recomendaciones para ATTR hereditaria</span><span class="en">Cardiology; hereditary ATTR recommendations</span></td></tr>
+          <tr><td>Medellín / Rionegro</td><td>Hospital San Vicente Fundación, Universidad de Antioquia</td><td><span class="es">Hematología, amiloidosis AL</span><span class="en">Hematology, AL amyloidosis</span></td></tr>
+          <tr><td>Cali</td><td>Fundación Valle del Lili</td><td><span class="es">Amiloidosis cardíaca (AL, ATTRwt, ATTRv)</span><span class="en">Cardiac amyloidosis (AL, ATTRwt, ATTRv)</span></td></tr>
+          <tr><td>Barranquilla</td><td>Clínica Iberoamericana</td><td><span class="es">Programa de insuficiencia cardíaca</span><span class="en">Heart failure program</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="comunidad" class="community">
+  <div class="wrap stack">
+    <span class="eyebrow"><span class="es">Comunidad</span><span class="en">Community</span></span>
+    <h2><span class="es">Un lugar para pacientes y personas cuidadoras</span><span class="en">A place for patients and caregivers</span></h2>
+    <p class="prose"><span class="es">La amiloidosis es poco frecuente, y muchas personas pasan años sin conocer a alguien con el mismo diagnóstico. Esta comunidad existe para compartir experiencias, trámites que funcionaron y apoyo entre pares. No damos consejos médicos.</span><span class="en">Amyloidosis is rare, and many people go years without meeting someone with the same diagnosis. This community exists to share experiences, paperwork that worked, and peer support. We do not give medical advice.</span></p>
+    <div class="ways">
+      <div class="way"><h3><span class="es">Encuentro virtual mensual</span><span class="en">Monthly virtual meeting</span></h3><p><span class="es">Una hora para conversar, con un tema por mes: diagnóstico, tutelas, vida diaria, cuidado.</span><span class="en">One hour to talk, with a monthly topic: diagnosis, tutelas, daily life, caregiving.</span></p><p><span class="es">Le enviamos la fecha y el enlace por correo.</span><span class="en">We will email you the date and link.</span></p><p class="msg-to"><span class="es">Envíe este mensaje a</span><span class="en">Send this message to</span></p><div class="contact"><code>contacto@amiloidosiscolombia.com</code><button class="copy" type="button" data-copy="contacto@amiloidosiscolombia.com"><span class="es">Copiar</span><span class="en">Copy</span></button></div><div class="es msgbox"><p class="msg-subj"><strong>Asunto:</strong> Encuentro virtual mensual</p><pre class="msg-body" id="msg-meet-es">Hola, me gustaría participar en el encuentro virtual mensual de Amiloidosis Colombia.
+
+Mi nombre es: ____
+Ciudad: ____
+Participo como: paciente / familiar / persona cuidadora
+
+Espero la invitación. Gracias.</pre><div class="msg-actions"><button class="copy" type="button" data-copy-from="msg-meet-es">Copiar mensaje</button><a href="mailto:contacto@amiloidosiscolombia.com?subject=Encuentro%20virtual%20mensual&amp;body=Hola%2C%20me%20gustar%C3%ADa%20participar%20en%20el%20encuentro%20virtual%20mensual%20de%20Amiloidosis%20Colombia.%0A%0AMi%20nombre%20es%3A%20____%0ACiudad%3A%20____%0AParticipo%20como%3A%20paciente%20/%20familiar%20/%20persona%20cuidadora%0A%0AEspero%20la%20invitaci%C3%B3n.%20Gracias.">Abrir en mi correo</a></div></div><div class="en msgbox"><p class="msg-subj"><strong>Subject:</strong> Monthly virtual meeting</p><pre class="msg-body" id="msg-meet-en">Hello, I would like to join the Amiloidosis Colombia monthly virtual meeting.
+
+My name is: ____
+City: ____
+I am joining as: patient / family member / caregiver
+
+I look forward to the invitation. Thank you.</pre><div class="msg-actions"><button class="copy" type="button" data-copy-from="msg-meet-en">Copy message</button><a href="mailto:contacto@amiloidosiscolombia.com?subject=Monthly%20virtual%20meeting&amp;body=Hello%2C%20I%20would%20like%20to%20join%20the%20Amiloidosis%20Colombia%20monthly%20virtual%20meeting.%0A%0AMy%20name%20is%3A%20____%0ACity%3A%20____%0AI%20am%20joining%20as%3A%20patient%20/%20family%20member%20/%20caregiver%0A%0AI%20look%20forward%20to%20the%20invitation.%20Thank%20you.">Open in my email</a></div></div></div>
+      <div class="way"><h3><span class="es">Grupo de mensajería</span><span class="en">Messaging group</span></h3><p><span class="es">Un grupo moderado para preguntas del día a día y avisos de la comunidad.</span><span class="en">A moderated group for everyday questions and community announcements.</span></p><p><span class="es">Para proteger la privacidad del grupo, la invitación se envía por correo.</span><span class="en">To protect members' privacy, invitations are sent by email.</span></p><p class="msg-to"><span class="es">Envíe este mensaje a</span><span class="en">Send this message to</span></p><div class="contact"><code>contacto@amiloidosiscolombia.com</code><button class="copy" type="button" data-copy="contacto@amiloidosiscolombia.com"><span class="es">Copiar</span><span class="en">Copy</span></button></div><div class="es msgbox"><p class="msg-subj"><strong>Asunto:</strong> Grupo de mensajería</p><pre class="msg-body" id="msg-grp-es">Hola, me interesa unirme al grupo de mensajería de Amiloidosis Colombia.
+
+Mi nombre es: ____
+Ciudad: ____
+Participo como: paciente / familiar / persona cuidadora
+Número de celular para la invitación: ____
+
+Gracias.</pre><div class="msg-actions"><button class="copy" type="button" data-copy-from="msg-grp-es">Copiar mensaje</button><a href="mailto:contacto@amiloidosiscolombia.com?subject=Grupo%20de%20mensajer%C3%ADa&amp;body=Hola%2C%20me%20interesa%20unirme%20al%20grupo%20de%20mensajer%C3%ADa%20de%20Amiloidosis%20Colombia.%0A%0AMi%20nombre%20es%3A%20____%0ACiudad%3A%20____%0AParticipo%20como%3A%20paciente%20/%20familiar%20/%20persona%20cuidadora%0AN%C3%BAmero%20de%20celular%20para%20la%20invitaci%C3%B3n%3A%20____%0A%0AGracias.">Abrir en mi correo</a></div></div><div class="en msgbox"><p class="msg-subj"><strong>Subject:</strong> Messaging group</p><pre class="msg-body" id="msg-grp-en">Hello, I would like to join the Amiloidosis Colombia messaging group.
+
+My name is: ____
+City: ____
+I am joining as: patient / family member / caregiver
+Mobile number for the invitation: ____
+
+Thank you.</pre><div class="msg-actions"><button class="copy" type="button" data-copy-from="msg-grp-en">Copy message</button><a href="mailto:contacto@amiloidosiscolombia.com?subject=Messaging%20group&amp;body=Hello%2C%20I%20would%20like%20to%20join%20the%20Amiloidosis%20Colombia%20messaging%20group.%0A%0AMy%20name%20is%3A%20____%0ACity%3A%20____%0AI%20am%20joining%20as%3A%20patient%20/%20family%20member%20/%20caregiver%0AMobile%20number%20for%20the%20invitation%3A%20____%0A%0AThank%20you.">Open in my email</a></div></div></div>
+      <div class="way"><h3><span class="es">Para quienes cuidan</span><span class="en">For caregivers</span></h3><p><span class="es">Quien cuida también necesita apoyo. Habrá espacios propios para familias y personas cuidadoras.</span><span class="en">Caregivers need support too. There will be dedicated spaces for family members and caregivers.</span></p></div>
+      <div class="way"><h3><span class="es">Escríbanos</span><span class="en">Contact us</span></h3><p><span class="es">Para unirse, compartir su historia o proponer un tema.</span><span class="en">To join, share your story or suggest a topic.</span></p><div class="contact"><code>contacto@amiloidosiscolombia.com</code><button class="copy" type="button" data-copy="contacto@amiloidosiscolombia.com"><span class="es">Copiar</span><span class="en">Copy</span></button></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap stack prose">
+    <p><span class="es">Iniciativa independiente, sin afiliación con EPS, laboratorios ni instituciones. Información revisada en octubre de 2026; confirme datos de contacto y normas vigentes antes de usarlos.</span><span class="en">Independent initiative, not affiliated with any EPS, pharmaceutical company or institution. Information reviewed October 2026; confirm contact details and current regulations before relying on them.</span></p>
+    <p><span class="es">Fuentes: Ministerio de Salud y Protección Social (Ley 1392 de 2010, Resolución 2625 de 2025), Superintendencia Nacional de Salud, FUNCOLEHF, FECOER, Acta Médica Colombiana, Colombia Médica, Revista Colombiana de Cardiología, Frontiers in Cardiovascular Medicine.</span><span class="en">Sources: Ministry of Health and Social Protection (Law 1392 of 2010, Resolution 2625 of 2025), National Health Superintendency, FUNCOLEHF, FECOER, Acta Médica Colombiana, Colombia Médica, Revista Colombiana de Cardiología, Frontiers in Cardiovascular Medicine.</span></p>
+  </div>
+</footer>
+
+<button class="fb-btn" id="fb-open" type="button" aria-expanded="false" aria-controls="fb-panel">
+  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+  <span class="es">Comentarios</span><span class="en">Feedback</span>
+</button>
+<div class="fb-panel" id="fb-panel" role="dialog" aria-labelledby="fb-title" hidden>
+  <form id="fb-form" novalidate>
+    <div class="fb-head">
+      <h2 id="fb-title"><span class="es">Ayúdenos a mejorar</span><span class="en">Help us improve</span></h2>
+      <button class="fb-close" id="fb-close" type="button" aria-label="Cerrar / Close">×</button>
+    </div>
+    <fieldset>
+      <legend><span class="es">¿Esta página le fue útil?</span><span class="en">Was this page helpful?</span></legend>
+      <div class="fb-choices">
+        <label><input type="radio" name="util" id="fb-si" value="si"><span><span class="es">Sí</span><span class="en">Yes</span></span></label>
+        <label><input type="radio" name="util" id="fb-parte" value="en_parte"><span><span class="es">En parte</span><span class="en">Somewhat</span></span></label>
+        <label><input type="radio" name="util" id="fb-no" value="no"><span>No</span></label>
+      </div>
+    </fieldset>
+    <label class="field" for="fb-comment"><span><span class="es">Comentario o información que falta (opcional)</span><span class="en">Comment or missing information (optional)</span></span>
+      <textarea id="fb-comment" name="comentario" maxlength="2000"></textarea></label>
+    <label class="field" for="fb-email"><span><span class="es">Correo, si desea respuesta (opcional)</span><span class="en">Email, if you'd like a reply (optional)</span></span>
+      <input type="email" id="fb-email" name="email" autocomplete="email"></label>
+    <input type="checkbox" name="botcheck" id="fb-bot" class="hp" tabindex="-1" aria-hidden="true">
+    <p class="fb-note"><span class="es">Por favor no incluya datos de salud, diagnósticos ni documentos de identidad. Sus comentarios llegan a contacto@amiloidosiscolombia.com y solo se usan para mejorar esta página.</span><span class="en">Please don't include health details, diagnoses or ID numbers. Your feedback goes to contacto@amiloidosiscolombia.com and is used only to improve this page.</span></p>
+    <button class="fb-send" id="fb-send" type="submit"><span class="es">Enviar</span><span class="en">Send</span></button>
+    <p class="fb-msg" id="fb-msg" role="status" aria-live="polite"></p>
+  </form>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){
+    root.setAttribute('data-l',l); root.lang=l;
+    document.title = l==='en' ? 'Amyloidosis Colombia | Guide for patients and families' : 'Amiloidosis Colombia | Guía para pacientes y familias';
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed', String(b.dataset.set===l));});
+    try{localStorage.setItem('amilo-lang',l);}catch(e){}
+  }
+  var start='es';
+  try{var s=localStorage.getItem('amilo-lang'); if(s==='en'||s==='es') start=s;}catch(e){}
+  if(location.hash==='#en') start='en';
+  setLang(start);
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set);});});
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var src=b.dataset.copyFrom?document.getElementById(b.dataset.copyFrom):null;
+      var t=src?src.textContent:b.dataset.copy, lbl=b.innerHTML;
+      function done(){ b.innerHTML='<span class="es">Copiado</span><span class="en">Copied</span>'; setTimeout(function(){b.innerHTML=lbl;},1500); }
+      try{
+        navigator.clipboard.writeText(t).then(done,function(){ var c=src||b.previousElementSibling; var r=document.createRange(); r.selectNodeContents(c); var sel=getSelection(); sel.removeAllRanges(); sel.addRange(r); });
+      }catch(e){}
+    });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var ACCESS_KEY='WEB3FORMS_ACCESS_KEY'; /* replace with your Web3Forms access key */
+  var openBtn=document.getElementById('fb-open'), panel=document.getElementById('fb-panel'),
+      closeBtn=document.getElementById('fb-close'), form=document.getElementById('fb-form'),
+      send=document.getElementById('fb-send'), msg=document.getElementById('fb-msg');
+  function en(){return document.documentElement.getAttribute('data-l')==='en';}
+  function t(es,e){return en()?e:es;}
+  function setOpen(o){panel.hidden=!o; openBtn.setAttribute('aria-expanded',String(o)); if(o){var r=panel.querySelector('input[name="util"]'); if(r) r.focus();} else openBtn.focus();}
+  openBtn.addEventListener('click',function(){setOpen(panel.hidden);});
+  closeBtn.addEventListener('click',function(){setOpen(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden) setOpen(false);});
+  form.addEventListener('submit',function(e){
+    e.preventDefault(); msg.className='fb-msg'; msg.textContent='';
+    var util=(form.querySelector('input[name="util"]:checked')||{}).value||'';
+    var comment=document.getElementById('fb-comment').value.trim();
+    var email=document.getElementById('fb-email').value.trim();
+    if(!util && !comment){msg.className='fb-msg err'; msg.textContent=t('Elija una opción o escriba un comentario.','Choose an option or write a comment.'); return;}
+    if(email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){msg.className='fb-msg err'; msg.textContent=t('Revise el correo: parece incompleto.','Check the email address: it looks incomplete.'); return;}
+    if(ACCESS_KEY==='WEB3FORMS_ACCESS_KEY'){msg.className='fb-msg err'; msg.textContent=t('El formulario aún no está activo. Escríbanos a contacto@amiloidosiscolombia.com.','The form is not active yet. Please write to contacto@amiloidosiscolombia.com.'); return;}
+    send.disabled=true; msg.textContent=t('Enviando…','Sending…');
+    var data={access_key:ACCESS_KEY, subject:'Comentario en amiloidosiscolombia.com', from_name:'amiloidosiscolombia.com',
+      util:util||'(sin respuesta)', comentario:comment||'(sin comentario)', idioma:en()?'EN':'ES',
+      botcheck:document.getElementById('fb-bot').checked};
+    if(email){data.email=email; data.replyto=email;}
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json();})
+      .then(function(j){
+        if(j && j.success){form.reset(); msg.textContent=t('Gracias. Recibimos su comentario.','Thank you. We received your feedback.');}
+        else throw new Error();
+      })
+      .catch(function(){msg.className='fb-msg err'; msg.textContent=t('No se pudo enviar. Intente de nuevo o escriba a contacto@amiloidosiscolombia.com.','It could not be sent. Try again or write to contacto@amiloidosiscolombia.com.');})
+      .then(function(){send.disabled=false;});
+  });
+})();
+</script>
+</body>
+</html>
